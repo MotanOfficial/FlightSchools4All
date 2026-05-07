@@ -139,6 +139,18 @@
   }
 }
 
+/* Hide Next.js dev indicator portal and static indicator */
+#nextjs-portal,
+.__next-indicator-base,
+[data-nextjs-toast-wrapper],
+[data-nextjs-indicator],
+[data-nextjs-static-indicator] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 /* Aviation-themed selection */
 ::selection {
   background-color: oklch(0.75 0.12 220 / 0.3);
