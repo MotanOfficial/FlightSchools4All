@@ -33,7 +33,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "FlightSchools4All" }],
   icons: {
-    icon: "/images/logo.png",
+    icon: [
+      {
+        url: "/FlightSchools4All/images/logo.png",
+        href: "/FlightSchools4All/images/logo.png",
+      },
+    ],
+    apple: [
+      {
+        url: "/FlightSchools4All/images/logo.png",
+        href: "/FlightSchools4All/images/logo.png",
+      },
+    ],
   },
 };
 
