@@ -89,7 +89,7 @@ function Navbar({ onNavigateHome, currentView }: { onNavigateHome: () => void; c
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
             <img
-              src="/images/logo.jpeg"
+              src="/images/logo.png"
               alt="FlightSchools4All Logo"
               className="h-9 w-auto rounded"
             />
@@ -592,7 +592,7 @@ function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/images/logo.jpeg"
+                src="/images/logo.png"
                 alt="FlightSchools4All Logo"
                 className="h-9 w-auto rounded"
               />
