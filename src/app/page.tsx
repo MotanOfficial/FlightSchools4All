@@ -88,9 +88,11 @@ function Navbar({ onNavigateHome, currentView }: { onNavigateHome: () => void; c
             onClick={onNavigateHome}
             className="flex items-center gap-2 hover:opacity-80 transition-opacity"
           >
-            <div className="w-9 h-9 bg-sky-600 rounded-lg flex items-center justify-center">
-              <Plane className="w-5 h-5 text-white" />
-            </div>
+            <img
+              src="/images/logo.jpeg"
+              alt="FlightSchools4All Logo"
+              className="h-9 w-auto rounded"
+            />
             <span className="text-lg font-bold text-sky-900 tracking-tight">
               FlightSchools4All
             </span>
@@ -589,9 +591,11 @@ function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-sky-600 rounded-lg flex items-center justify-center">
-                <Plane className="w-4 h-4 text-white" />
-              </div>
+              <img
+                src="/images/logo.jpeg"
+                alt="FlightSchools4All Logo"
+                className="h-9 w-auto rounded"
+              />
               <span className="font-bold text-lg">FlightSchools4All</span>
             </div>
             <p className="text-sky-300 text-sm leading-relaxed">

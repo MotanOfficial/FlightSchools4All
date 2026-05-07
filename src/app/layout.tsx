@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "FlightSchools4All" }],
   icons: {
-    icon: "/logo.svg",
+    icon: "/images/logo.jpeg",
   },
 };
 
