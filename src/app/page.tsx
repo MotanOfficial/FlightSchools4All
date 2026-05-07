@@ -4,6 +4,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { useCallback, Suspense, useMemo } from "react";
 import { countriesData, getCountryById } from "@/lib/schools-data";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { getAssetPath } from "@/lib/utils";
 import {
   Plane,
   ArrowLeft,
@@ -145,7 +146,7 @@ function Navbar({ onNavigateHome, currentView, onSelectCountry }: { onNavigateHo
           >
             <div className="relative">
               <img
-                src="/images/logo.png"
+                src={getAssetPath("/images/logo.png")}
                 alt="FlightSchools4All Logo"
                 className="h-10 w-auto rounded-lg shadow-sm"
               />
@@ -307,7 +308,7 @@ function HeroSection() {
     <section className="relative overflow-hidden min-h-[92vh] flex items-center">
       {/* Parallax background image with animated gradient overlay */}
       <div className="absolute inset-0">
-        <ParallaxImage src="/images/hero.png" alt="Student pilots with training aircraft" />
+        <ParallaxImage src={getAssetPath("/images/hero.png")} alt="Student pilots with training aircraft" />
         <motion.div
           className="absolute inset-0"
           animate={{
@@ -729,7 +730,7 @@ function AboutSection() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-sky-900/10 border border-sky-100">
               <img
-                src="/images/planes.png"
+                src={getAssetPath("/images/planes.png")}
                 alt="Training aircraft lineup"
                 className="w-full h-auto hover:scale-105 transition-transform duration-700"
               />
@@ -796,7 +797,7 @@ function CountryCard({
             }`}
           >
             <img
-              src={country.image}
+              src={getAssetPath(country.image)}
               alt={`${country.name} aviation`}
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
             />
@@ -964,7 +965,7 @@ function CountryDetailPage({
       {/* Country hero */}
       <div className="relative h-[400px] sm:h-[450px] overflow-hidden">
         <img
-          src={country.image}
+          src={getAssetPath(country.image)}
           alt={`${country.name} aviation`}
           className="w-full h-full object-cover"
         />
@@ -1122,7 +1123,7 @@ function Footer({ onSelectCountry }: { onSelectCountry: (id: string) => void }) 
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/images/logo.png"
+                src={getAssetPath("/images/logo.png")}
                 alt="FlightSchools4All Logo"
                 className="h-9 w-auto rounded"
               />
